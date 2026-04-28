@@ -1233,7 +1233,7 @@ document.getElementById('form-reserva').addEventListener('submit', function(e) {
   [nome, tel, pax, data, hora].forEach(function(f){ f.classList.toggle('err', !f.value.trim()); if (!f.value.trim()) ok = false; });
   if (!ok) { showToast('Preencha todos os campos obrigatórios.'); return; }
   var dt = new Date(data.value + 'T12:00:00').toLocaleDateString('pt-BR');
-  var msg = ['\uD83C\uDF7D\uFE0F *Reserva \u2014 Villa Bel\u00E9m*', '', '\uD83D\uDC64 *Nome:* ' + nome.value.trim(), '\uD83D\uDCF1 *Telefone:* ' + tel.value.trim(), '\uD83D\uDCC5 *Data:* ' + dt, '\uD83D\uDD50 *Hor\u00E1rio:* ' + hora.value, '\uD83D\uDC65 *Pessoas:* ' + pax.value, obs ? '\uD83D\uDCDD *Obs:* ' + obs : '', '_Aguardo confirma\u00E7\u00E3o. Obrigado!_'].filter(Boolean).join('\n');
+  var msg = ['*Reserva \u2014 Villa Bel\u00E9m*', '', '*Nome:* ' + nome.value.trim(), '*Telefone:* ' + tel.value.trim(), '*Data:* ' + dt, '*Hor\u00E1rio:* ' + hora.value, '*Pessoas:* ' + pax.value, obs ? '*Obs:* ' + obs : '', '_Aguardo confirma\u00E7\u00E3o. Obrigado!_'].filter(Boolean).join('\n');
   window.open('https://wa.me/5521988086212?text=' + encodeURIComponent(msg), '_blank');
   showToast('Reserva enviada! Aguarde confirmação no WhatsApp.');
 });
@@ -1250,7 +1250,7 @@ document.getElementById('form-evento').addEventListener('submit', function(e) {
   [nome, tipo, data].forEach(function(f){ f.classList.toggle('err', !f.value.trim()); if (!f.value.trim()) ok = false; });
   if (!ok) { showToast('Preencha os campos obrigatórios.'); return; }
   var dt = new Date(data.value + 'T12:00:00').toLocaleDateString('pt-BR');
-  var msg = ['\uD83C\uDF89 *Evento \u2014 Villa Bel\u00E9m*', '', '\uD83D\uDC64 *Nome:* ' + nome.value.trim(), '\uD83C\uDF8A *Tipo:* ' + tipo.value, '\uD83D\uDCC5 *Data:* ' + dt, conv ? '\uD83D\uDC65 *Convidados:* ' + conv : '', obs ? '\uD83D\uDCDD *Detalhes:* ' + obs : '', '_Aguardo retorno para o or\u00E7amento._'].filter(Boolean).join('\n');
+  var msg = ['*Evento \u2014 Villa Bel\u00E9m*', '', '*Nome:* ' + nome.value.trim(), '*Tipo:* ' + tipo.value, '*Data:* ' + dt, conv ? '*Convidados:* ' + conv : '', obs ? '*Detalhes:* ' + obs : '', '_Aguardo retorno para o or\u00E7amento._'].filter(Boolean).join('\n');
   window.open('https://wa.me/5521988086212?text=' + encodeURIComponent(msg), '_blank');
   showToast('Orçamento enviado! Em breve entraremos em contato.');
 });
