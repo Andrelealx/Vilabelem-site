@@ -1,0 +1,40 @@
+{
+  "name": "Villa Belém — Restaurante & Delicatessen",
+  "short_name": "Villa Belém",
+  "description": "Restaurante, delicatessen e lanchonete em Guapimirim/RJ. Gastronomia premium na Serra Fluminense.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a2e1a",
+  "theme_color": "#1a2e1a",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "categories": ["food", "restaurant"],
+  "icons": [
+    { "src": "favicon-16.png",  "sizes": "16x16",   "type": "image/png" },
+    { "src": "favicon-32.png",  "sizes": "32x32",   "type": "image/png" },
+    { "src": "favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Fazer Reserva",
+      "short_name": "Reservar",
+      "description": "Reserve sua mesa rapidamente",
+      "url": "/#reservas",
+      "icons": [{ "src": "favicon-512.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "Cardápio",
+      "short_name": "Cardápio",
+      "description": "Veja nosso cardápio completo",
+      "url": "/#cardapio",
+      "icons": [{ "src": "favicon-512.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "WhatsApp",
+      "short_name": "WhatsApp",
+      "description": "Fale conosco pelo WhatsApp",
+      "url": "https://wa.me/5521988086212",
+      "icons": [{ "src": "favicon-512.png", "sizes": "512x512" }]
+    }
+  ]
+}
